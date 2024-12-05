@@ -21,14 +21,7 @@ const experiences = [
     duration: "Jan. 2024",
     description: `<p className="mt-2">Revamped website flows, and added user friendly functionalities. Coordinated sessions to work through functionality, site architecture, and user flow requirements.</p>`,
     website: "",
-  },
-  {
-    title: "Brand Identity Designer & Developer",
-    company: "Healthbux",
-    duration: "Oct. 2023 - Dec. 2023",
-    description: `<p className="mt-2">Contributed in making the brand identity, from designing the logo to packaging designs. Researched offline marketing strategies and built offline presence of the brand. Designed and developed the website for the brand.</p>`,
-    website: "https://linktr.ee/healthbux",
-  },
+  }
 ];
 
 const ExperienceSection = () => {

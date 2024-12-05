@@ -73,7 +73,9 @@ const Projects = () => {
               {project.Project_Description}
             </p>
             <div className="pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center pb-4 opacity-0 transition-all duration-300 group-hover:translate-y-10 group-hover:opacity-100 custom">
-              <div className="pointer-events-auto custom bg-white rounded-lg py-2 px-3 text-md font-semibold text-black flex gap-2 items-center cursor-pointer hover:bg-white/80 transition-colors">
+              <div className="pointer-events-auto custom bg-white rounded-lg py-2 px-3 text-md font-semibold text-black flex gap-2 items-center cursor-pointer hover:bg-white/80 transition-colors" onClick={()=>{
+                window.location.href= `/projects/${project.Project_Name}`;
+              }}>
                 View Details <ArrowRight className="w-4 h-4"/>
               </div>
               <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10 custom">

@@ -7,6 +7,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe';
 import Footer from './components/Footer';
+import ProjectDeets from './components/ProjectDeets';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:name" element={<ProjectDeets />} />
           <Route path="/contact" element={<ContactMe />} />
         </Routes>
       </Router>
