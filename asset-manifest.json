@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-kb/static/css/main.97d784fd.css",
+    "main.js": "/portfolio-kb/static/js/main.cfb4ea03.js",
+    "static/js/453.5717cdb7.chunk.js": "/portfolio-kb/static/js/453.5717cdb7.chunk.js",
+    "static/media/adroitUIwhitebg.png": "/portfolio-kb/static/media/adroitUIwhitebg.dea3f7590dc64f4bc908.png",
+    "static/media/frame1_2.mp4": "/portfolio-kb/static/media/frame1_2.f828e217296ae53ac216.mp4",
+    "static/media/quantamind.png": "/portfolio-kb/static/media/quantamind.1bfd3568359a69fbf1af.png",
+    "static/media/deeptrace-dashboard.png": "/portfolio-kb/static/media/deeptrace-dashboard.b21d367be5998562321f.png",
+    "static/media/deeptrace_logo_transparent.png": "/portfolio-kb/static/media/deeptrace_logo_transparent.5da82acc189590f7bea5.png",
+    "static/media/adroitUIhome.png": "/portfolio-kb/static/media/adroitUIhome.eb72f110a8337b81919d.png",
+    "static/media/quantaMindLogo.png": "/portfolio-kb/static/media/quantaMindLogo.76e42af20bc44a7ecfde.png",
+    "index.html": "/portfolio-kb/index.html",
+    "main.97d784fd.css.map": "/portfolio-kb/static/css/main.97d784fd.css.map",
+    "main.cfb4ea03.js.map": "/portfolio-kb/static/js/main.cfb4ea03.js.map",
+    "453.5717cdb7.chunk.js.map": "/portfolio-kb/static/js/453.5717cdb7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97d784fd.css",
+    "static/js/main.cfb4ea03.js"
+  ]
+}
