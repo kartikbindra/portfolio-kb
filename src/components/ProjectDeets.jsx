@@ -9,6 +9,17 @@ import qunataMindLogo from "../assets/quantaMindLogo.png";
 import deeptrace from "../assets/deeptrace-dashboard.png";
 import adroitUIhome from "../assets/adroitUIhome.png";
 import quantamind from "../assets/quantamind.png";
+import deeptraceLanding from "../assets/deeptrace-landing.png";
+import deeptracesignup from "../assets/deeptrace-signup.png";
+import deeptraceUpload from "../assets/deeptrace-upload.png";
+import deeptraceWorkflow from "../assets/workflow_diagram_New.png";
+import quantaGames from "../assets/games dashboarddark.png";
+import quantaMeditate from "../assets/meditation session.png";
+import simonSays from "../assets/simon says.png";
+import wordle from "../assets/wordle.png";
+import questionnaire from "../assets/questionnaire.png";
+import journal from "../assets/your journaldark.png";
+
 
 const Projects = [
     {
@@ -19,7 +30,7 @@ const Projects = [
         ProjectTechUsed: ["JavaScript", "React", "TailwindCSS", "Node.js", "MongoDB", "Express", "Solidity", "Flask", "Figma"],
         ProjectLinks: ["https://www.github.com/HitG010/DeepTrace"],
         ProjectLogo: {deeptrace_logo_transaprent},
-        ProjectImages: [{deeptrace}],
+        ProjectImages: [{deeptrace}, {deeptraceLanding}, {deeptracesignup}, {deeptraceUpload}, {deeptraceWorkflow}],
         ProjectVideo: ["https://www.youtube.com/embed/k2KG_4mlOEo"],
     },
     {
@@ -41,7 +52,7 @@ const Projects = [
         ProjectTechUsed: ["HTML", "CSS", "JavaScript", "EJS", "Node.js", "Express", "Firebase", "Figma"],
         ProjectLinks: ["https://www.github.com/kartikbindra/quantamind", "https://quantamind.dev"],
         ProjectLogo: {qunataMindLogo},
-        ProjectImages: [{quantamind}],
+        ProjectImages: [{quantamind}, {quantaMeditate}, {journal}, {questionnaire}, {wordle}, {quantaGames}],
         ProjectVideo: ["https://www.youtube.com/embed/nC0nxS_cI1Q"],
     }
 ];
@@ -49,9 +60,9 @@ const Projects = [
 const logos = [deeptrace_logo_transaprent, adroitUIwhitebg, qunataMindLogo];
 
 const imgs = [
-    [deeptrace],
+    [deeptrace, deeptraceLanding, deeptracesignup, deeptraceUpload, deeptraceWorkflow],
     [adroitUIhome],
-    [quantamind],
+    [quantamind, quantaMeditate, journal, questionnaire, wordle, quantaGames],
 ];
 
 const linksicons = [<Github />, <Globe />, <Figma />];
@@ -60,45 +71,68 @@ const ProjectDeets = () => {
     const { name } = useParams();
 
     return (
-        <div className="mt-24 mx-auto w-[60%]">
-            {/* adding a bzack to projects button */}
-            <button className="flex gap-2 items-center text-textSecondary px-2 py-1 rounded-md transition-all duration-300 hover:bg-darkCard mb-4" onClick={() => window.location.href='/projects/'}>
+        <div className="mt-16 mx-auto w-full sm:w-[80%] md:w-[60%] px-4">
+            {/* Back to projects button */}
+            <button
+                className="flex gap-2 items-center text-textSecondary px-4 py-2 rounded-md transition-all duration-300 hover:bg-darkCard mb-4"
+                onClick={() => window.location.href = '/projects/'}
+            >
                 <FaChevronLeft /> Back to Projects
             </button>
             {Projects.map((project) => {
                 if (project.ProjectName.toLowerCase() === name.toLowerCase()) {
                     return (
-                        <div key={project.ProjectId} className="flex flex-col">
-                            <div className='flex justify-between items-center'>
-                            <div className='flex items-center gap-4'>
-                            <img src={logos[project.ProjectId]} alt="logo" className="h-16 w-16 object-contain" />
-                            <div className="flex flex-col">
-                                <h1 className="text-4xl font-bold">{project.ProjectName}</h1>
-                                <h2 className="text-lg text-textSecondary">{project.ProjectTagline}</h2>
-                            </div>
-                            </div>
-                            <div className="flex justify-center gap-4">
-                                {project.ProjectLinks.map((link, idx) => (
-                                    <div className='relative group overflow-hidden rounded-lg'>
-                                    <a key={link} href={link} className="h-12 w-12 flex items-center justify-center border border-textSecondary/10 transition-all duration-300 px-2 py-2 rounded-lg" target='_blank'>{linksicons[idx]}</a>
-                                    <div className="absolute bottom-0 left-0 right-0 h-2 bg-textSecondary opacity-30 blur-lg group-hover:opacity-100 transition duration-300"></div>
+                        <div key={project.ProjectId} className="flex flex-col justify-center">
+                            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                                <div className="flex items-center gap-4">
+                                    <img src={logos[project.ProjectId]} alt="logo" className="h-12 w-12 sm:h-16 sm:w-16 object-contain" />
+                                    <div className="flex flex-col">
+                                        <h1 className="text-3xl sm:text-4xl font-bold">{project.ProjectName}</h1>
+                                        <h2 className="text-md sm:text-lg text-textSecondary">{project.ProjectTagline}</h2>
                                     </div>
-                                    
-                                ))}
+                                </div>
+                                <div className="flex justify-center gap-4 mt-4 sm:mt-0">
+                                    {project.ProjectLinks.map((link, idx) => (
+                                        <a
+                                            key={link}
+                                            href={link}
+                                            className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center border border-textSecondary/10 transition-all duration-300 px-2 py-2 rounded-lg"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {linksicons[idx]}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
-                            </div>
-                            <div className="flex flex-wrap gap-4 mt-4">
+                            <div className="flex flex-wrap gap-2 sm:gap-4 mt-4">
                                 {project.ProjectTechUsed.map((tech) => (
-                                    <span key={tech} className="bg-darkCard text-textSecondary px-2 py-1 rounded-md">{tech}</span>
+                                    <span key={tech} className="bg-darkCard text-textSecondary px-2 py-1 rounded-md text-xs sm:text-sm">{tech}</span>
                                 ))}
                             </div>
-                            <p className="text-lg mt-4" dangerouslySetInnerHTML={{ __html: project.ProjectDescription }}></p>
-                            {project.ProjectVideo[0] && (
-                                <iframe width="800" height="420" src={project.ProjectVideo[0]} className='mt-8'></iframe>
-                            )}
+                            <p
+                                className="text-md sm:text-lg mt-4"
+                                dangerouslySetInnerHTML={{ __html: project.ProjectDescription }}
+                            ></p>
+                            <div className="w-full flex justify-center">
+                                {project.ProjectVideo[0] && (
+                                    <iframe
+                                        width="100%"
+                                        height="240"
+                                        src={project.ProjectVideo[0]}
+                                        className="mt-8 sm:w-[800px] sm:h-[420px]"
+                                        title="Project Video"
+                                    ></iframe>
+                                )}
+                            </div>
                             <div className="mt-8">
                                 {project.ProjectImages.map((image, idx) => (
-                                    <img key={image} src={imgs[project.ProjectId][idx]} alt="project" className="w-full rounded-xl shadow-md" />
+                                    <img
+                                        key={idx}
+                                        src={imgs[project.ProjectId][idx]}
+                                        alt="project"
+                                        className="w-full rounded-xl shadow-md mt-4"
+                                    />
                                 ))}
                             </div>
                         </div>
@@ -107,6 +141,6 @@ const ProjectDeets = () => {
             })}
         </div>
     );
-    }
+};
 
 export default ProjectDeets;
