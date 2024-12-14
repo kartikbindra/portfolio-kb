@@ -32,7 +32,6 @@ const App = () => {
   ) : (
     <div className={`w-full min-h-screen bg-darkBg text-textPrimary transition-opacity duration-700 ${isFade ? "opacity-100" : "opacity-0"} overflow-hidden`}>
       <Navbar />
-      <LikeCounter />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -42,6 +41,7 @@ const App = () => {
           <Route path="/contact" element={<ContactMe />} />
         </Routes>
       </Router>
+      <LikeCounter />
       <Footer />
     </div>
   );

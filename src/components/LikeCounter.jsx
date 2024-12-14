@@ -49,7 +49,7 @@ const LikeCounter = () => {
   };
 
   return (
-    <button onClick={handleLike} className='flex items-center justify-center space-x-2 fixed z-25 bottom-4 right-4 px-3 py-2.5 rounded-xl border border-textSecondary/20 transition duration-300 hover:bg-darkCard'>
+    <button onClick={handleLike} className='flex items-center justify-center space-x-2 fixed z-200 bottom-4 right-4 px-3 py-2.5 rounded-xl border border-textSecondary/20 bg-darkCard/50 transition duration-300'>
       <div className="like-button">
         {liked ? <FaHeart className='w-6 h-6' style={{color:'#B01E28'}}/> : <FaRegHeart className='w-6 h-6'/>}
       </div>
