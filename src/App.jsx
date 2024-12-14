@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe';
 import Footer from './components/Footer';
 import ProjectDeets from './components/ProjectDeets';
+import LikeCounter from './components/LikeCounter';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ const App = () => {
   ) : (
     <div className={`w-full min-h-screen bg-darkBg text-textPrimary transition-opacity duration-700 ${isFade ? "opacity-100" : "opacity-0"} overflow-hidden`}>
       <Navbar />
+      <LikeCounter />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
