@@ -10,7 +10,7 @@ const Home = () => {
       <Section />
       <TechStack />
       <Experience />
-      <Projects />
+      <Projects page="HOME"/>
       
     </div>
   );

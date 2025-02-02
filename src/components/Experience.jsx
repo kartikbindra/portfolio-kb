@@ -46,6 +46,7 @@ const ExperienceSection = () => {
                   <a
                     className="relative group text-lg text-textSecondary hover:text-textPrimary w-inherit"
                     href={experience.website}
+                    target="_blank"
                   >
                     {experience.company}
                     <span className="absolute inline-block h-[2px] left-0 bottom-0 w-0 bg-textPrimary transition-all duration-300 group-hover:w-full"></span>

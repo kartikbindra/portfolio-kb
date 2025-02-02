@@ -53,7 +53,7 @@ const Section = () => {
           </div>
         </div>
         <p className="mt-4 text-base md:text-xl">
-          I'm a dedicated software engineer skilled in Full-Stack development, Blockchain development, and UI/UX Design, focused on building impactful and scalable solutions.{" "}
+          I'm a dedicated software engineer skilled in Full-Stack development, Blockchain development, and UI/UX Design focused on building impactful and scalable solutions.{" "}
           <button
             className="font-light text-white/50"
             onClick={() => {
