@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="flex gap-2 items-center">
           <button className="text-black bg-white text-md font-semibold py-2 px-4 rounded-lg flex gap-2 items-center hover:bg-white/80 transition duration-300" onClick={()=>{
             // window.location.href="https://drive.google.com/file/d/1UIclYO4ov2B8zT6oYRdiYJ3H15y1vgLa/view?usp=sharing";
-            window.open("https://drive.google.com/file/d/1UIclYO4ov2B8zT6oYRdiYJ3H15y1vgLa/view?usp=sharing");
+            window.open("https://drive.google.com/file/d/13jAFA32JCrIOQ6NFxhm4J2dEZN_JmxAY/view?usp=sharing");
           }}><FileUser className="w-5 h-5"/> Resume </button>
 
           {/* Hamburger Menu for Mobile */}
