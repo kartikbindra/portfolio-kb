@@ -52,7 +52,7 @@ const Navbar = () => {
                 <Link to="/about">About</Link>
               </li>
               <li className="text-md cursor-pointer hover:text-textPrimary">
-                <Link to="/projects">Projects</Link>
+                <Link to="/projects/">Projects</Link>
               </li>
               <li className="text-md cursor-pointer hover:text-textPrimary">
                 <Link to="/contact">Contact Me</Link>

@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import LazyLoad from 'react-lazyload';
 import {projectsData} from '../data/projectsData';
+import { useLocation } from 'react-router-dom';
 
 // import quantamind from "../assets/quantamind.png";
 // import adroitUIhome from "../assets/adroitUIhome.png";
@@ -35,15 +36,19 @@ import {projectsData} from '../data/projectsData';
 //     },
 // ];
 
-const Projects = ({ page }) => {
-  if(page === 'HOME'){
-    projectsData.length = 3;
-  }
+const Projects = () => {
+  const path = useLocation().pathname;
+  // if(path === '/') {
+  //   projectsData.length = 3;
+  // }
+  // else if (path === '/projects') {
+  //   projectsData.length = 8;
+  // }
   return (
     <div className="bg-bgDark text-white mt-4 w-full md:w-[60%] mx-auto px-4 md:px-0">
       <div className='flex justify-between gap-4 mb-8'>
       <h2 className="text-4xl font-bold">Projects</h2>
-      {(page == 'HOME') && <button className="flex gap-2 items-center text-textSecondary px-2 py-1 rounded-md transition-all duration-300 hover:bg-darkCard"
+      {(path === '/') && <button className="flex gap-2 items-center text-textSecondary px-2 py-1 rounded-md transition-all duration-300 hover:bg-darkCard"
                 onClick={() => window.location.href = '/projects/'}>View All <ArrowUpRight className='h-4 w-4'/></button>}
       </div>
       {projectsData.map((project, index) => (
