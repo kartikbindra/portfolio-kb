@@ -73,7 +73,7 @@ const Projects = () => {
               className="h-10 w-10 sm:h-12 sm:w-12 object-contain mb-1"
             />
             </LazyLoad>}
-            <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-700 dark:text-neutral-300 m-0 custom">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-white dark:text-neutral-300 m-0 custom">
               {project.ProjectName}
             </h2>
             <div className="flex gap-2 mt-1 custom flex-wrap">
