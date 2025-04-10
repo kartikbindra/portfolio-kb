@@ -29,7 +29,7 @@ const Navbar = () => {
           </ul>
           <div className="flex gap-2 items-center">
             <button className="text-black bg-white text-md font-semibold py-2 px-4 rounded-lg flex gap-2 items-center hover:bg-white/80 transition duration-300" onClick={() => {
-              window.open("https://drive.google.com/file/d/1w_wVrtQf1zikpGx-9vyS7hkODj0M2sWJ/view?usp=sharing");
+              window.open("https://drive.google.com/file/d/143Ci6u2FjP-vfqziWYjbsQEZVC8798al/view?usp=sharing", "_blank");
             }}><FileUser className="w-5 h-5" /> Resume </button>
 
             {/* Hamburger Menu for Mobile */}
