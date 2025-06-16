@@ -1,5 +1,6 @@
 import { Mail, ArrowUpRight } from "lucide-react";
 import kbLogo from "../assets/kbLogo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -11,13 +12,11 @@ const Footer = () => {
                 </div>
                 <div className="mt-4 flex flex-row justify-between items-center">
                     <h2 className="text-xl md:text-4xl font-bold">Let's Get in Touch</h2>
-                    <div className="relative group flex gap-2 text-lg text-textPrimary items-center cursor-pointer" onClick={()=>{
-                        window.location.href="/contact";
-                    }}>Say Hi 👋 <ArrowUpRight/>
+                    <Link to="/contact" className="relative group flex gap-2 text-lg text-textPrimary items-center cursor-pointer">Say Hi 👋 <ArrowUpRight/>
                         <span
                             className="absolute inline-block h-[2px] left-0 bottom-0 w-0 bg-textPrimary transition-all duration-300 group-hover:w-full"
                         ></span>
-                    </div>
+                    </Link>
                 </div>
                 <span
                     className="absolute inline-block h-[2px] left-0 bottom-0 w-full bg-textSecondary/20 transition-all duration-300"

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const experiences = [
   {
@@ -50,14 +51,19 @@ const ExperienceSection = () => {
                   <h3 className="text-xl sm:text-2xl font-semibold">
                     {experience.title}
                   </h3>
-                  <a
-                    className="relative group text-lg text-textSecondary hover:text-textPrimary w-inherit"
-                    href={experience.website}
-                    target="_blank"
-                  >
-                    {experience.company}
-                    <span className="absolute inline-block h-[2px] left-0 bottom-0 w-0 bg-textPrimary transition-all duration-300 group-hover:w-full"></span>
-                  </a>
+                  {experience.website ? (
+                    <Link
+                      className="relative group text-lg text-textSecondary hover:text-textPrimary w-inherit"
+                      to={experience.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {experience.company}
+                      <span className="absolute inline-block h-[2px] left-0 bottom-0 w-0 bg-textPrimary transition-all duration-300 group-hover:w-full"></span>
+                    </Link>
+                  ) : (
+                    <span className="text-lg text-textSecondary">{experience.company}</span>
+                  )}
                 </div>
                 <p className="text-sm text-textSecondary italic mt-2 sm:mt-0">
                   {experience.duration}

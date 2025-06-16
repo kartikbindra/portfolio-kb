@@ -28,6 +28,7 @@ import gcp from "./gcp.png";
 import markdown from "./markdown.png";
 import npm from "./npm.png";
 import storybook from "./storybook.png";
+import prisma from "./prisma.png";
 
 export const techStackIcons = [
     { name: "C++", img: cpluspluslogo, alt: "cpp" },
@@ -43,7 +44,8 @@ export const techStackIcons = [
     { name: "Figma", img: figma, alt: "figma" },
     { name: "Git", img: git, alt: "git" },
     { name: "PostgreSQL", img: postgresql, alt: "postgresql" },
-    { name: "Vercel", img: vercel, alt: "vercel" },
+    { name: "Prisma", img: prisma, alt: "prisma" },
+    // { name: "Vercel", img: vercel, alt: "vercel" },
     { name: "MongoDB", img: mongodb, alt: "mongodb" },
     { name: "Firebase", img: firebase, alt: "firebase" },
     { name: "Docker", img: docker, alt: "docker" },
@@ -51,7 +53,7 @@ export const techStackIcons = [
     { name: "Next.js", img: nextjs, alt: "nextjs" },
     { name: "Hardhat", img: hardhat, alt: "hardhat" },
     { name: "Sass", img: sass, alt: "sass" },
-    { name: "Bootstrap", img: bootstrap, alt: "bootstrap" },
+    // { name: "Bootstrap", img: bootstrap, alt: "bootstrap" },
     { name: "Flask", img: flask, alt: "flask" },
     { name: "Hyperledger", img: hyperledger, alt: "hyperledger" },
     { name: "Postman", img: postman, alt: "postman" },

@@ -10,6 +10,9 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe';
 import ProjectDeets from './components/ProjectDeets';
+import PublicationList from './components/PublicationList';
+import Publications from './pages/Publications';
+import Blogs from './pages/Blogs';
 
 // const Home = lazy(() => import('./pages/Home'));
 // const About = lazy(() => import('./pages/About'));
@@ -41,6 +44,8 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/projects/" element={<Projects page={"PROJECTS"}/>} />
             <Route path="/projects/:id" element={<ProjectDeets />} />
+            <Route path="/publications" element={<Publications />} />
+            <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<ContactMe />} />
           </Routes>
         </motion.div>

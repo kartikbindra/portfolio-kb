@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { FaChevronLeft } from "react-icons/fa6";
 import { CgWebsite } from 'react-icons/cg';
 import { Github, Globe, Figma } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 import { projectsData } from '../data/projectsData.jsx';
 
@@ -15,12 +16,12 @@ const ProjectDeets = () => {
     return (
         <div className="mt-16 mx-auto w-full sm:w-[80%] md:w-[60%] px-4">
             {/* Back to projects button */}
-            <button
-                className="flex gap-2 items-center text-textSecondary px-4 py-2 rounded-md transition-all duration-300 hover:bg-darkCard mb-4"
-                onClick={() => window.location.href = '/projects/'}
+            <Link
+                className="flex gap-2 items-center text-textSecondary px-4 py-2 rounded-md transition-all duration-300 hover:bg-darkCard mb-4 w-fit"
+                to="/projects/"
             >
                 <FaChevronLeft /> Back to Projects
-            </button>
+            </Link>
             {projectsData.map((project) => {
                 if (project.ProjectId == id) {
                     return (

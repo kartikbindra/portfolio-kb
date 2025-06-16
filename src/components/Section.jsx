@@ -1,5 +1,6 @@
 import { MapPinHouse, Linkedin, Github, Mail } from "lucide-react";
 import { SiLeetcode } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Section = () => {
   return (
@@ -54,14 +55,12 @@ const Section = () => {
         </div>
         <p className="mt-4 text-base md:text-xl">
           I'm a dedicated software engineer skilled in Full-Stack development, Blockchain development, and UI/UX Design focused on building impactful and scalable solutions.{" "}
-          <button
+          <Link
             className="font-light text-white/50"
-            onClick={() => {
-              window.location.href = "/about";
-            }}
+            to="/about"
           >
             read more...
-          </button>
+          </Link>
         </p>
       </div>
     </section>
