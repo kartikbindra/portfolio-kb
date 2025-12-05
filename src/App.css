@@ -40,3 +40,8 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.cropped-video {
+  clip-path: inset(0 0 57px 0); /* top right bottom left */
+  -webkit-clip-path: inset(0 0 57px 0); /* vendor prefix */
+}
