@@ -13,6 +13,7 @@ import ProjectDeets from './components/ProjectDeets';
 import PublicationList from './components/PublicationList';
 import Publications from './pages/Publications';
 import Blogs from './pages/Blogs';
+import NotFound404 from './pages/404';
 
 // const Home = lazy(() => import('./pages/Home'));
 // const About = lazy(() => import('./pages/About'));
@@ -47,6 +48,7 @@ const App = () => {
             <Route path="/publications" element={<Publications />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<ContactMe />} />
+            <Route path="*" element={<NotFound404 />} /> 
           </Routes>
         </motion.div>
       </Suspense>

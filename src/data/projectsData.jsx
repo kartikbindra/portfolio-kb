@@ -37,12 +37,30 @@ import naiLanding from "../assets/nai-landing.png";
 import ecdsaSS from "../assets/ecdsaSS.png";
 import fallbackIcon from "../assets/fallbackIcon.png";
 import fallbackIconDesign from "../assets/fallbackIconDesign.png";
+import latentNavLogo from "../assets/latentNavLogo.png";
+import cgl_landing from "../assets/cgl_landing.png";
+import CGLArchitecture from "../assets/CGLArchitecture.png";
+import CGLHome from "../assets/CGLHome.png";
+import CGLUserProfile from "../assets/CGLUserProfile.png";
+import CGLProblems from "../assets/CGLProblems.png";
 
 
 
 const projectsData = [
     {
         ProjectId: 0,
+        ProjectName: "Code's Got Latent",
+        ProjectTagline: "A Competitive Programming Platform, but with a Twist of Latent!",
+        ProjectDescription: "<p><b>Code's Got Latent</b> is a full-stack <b>competitive programming platform</b> inspired by LeetCode and Codeforces, where ratings change based on users’ rank predictions (custom Elo-style rating algorithm), adding a unique twist to contests. <br/><br/> Integrated a <b>self-hosted Judge0 server</b> to securely execute and evaluate <b>multi-language code submissions</b>, implementing <b>asynchronous job handling, queue management</b>, and <b>real-time status updates.</b> Proudly completed more that <b>500+ user signups</b> on the platform. Co-created this platform with - <a href='https://www.linkedin.com/in/hiteshgupta201105' target='_blank'>@Hitesh Gupta</a></p>",
+        ProjectTechUsed: ["JavaScript", "React", "TailwindCSS", "Node.js", "Express", "PostgreSQL", "Prisma ORM", "Web Sockets"],
+        ProjectLinks: ["https://www.github.com/HitG010/codegotlatent", "https://www.codegotlatent.com"],
+        ProjectLogo: latentNavLogo,
+        ProjectImages: [cgl_landing, CGLArchitecture, CGLHome, CGLUserProfile, CGLProblems, ],
+        ProjectVideo: [],
+        thumbnailImg: cgl_landing,
+    },
+    {
+        ProjectId: 1,
         ProjectName: "DeepTrace",
         ProjectTagline: "Blockchain and Machine Learning based Deepfake Detection platform. ",
         ProjectDescription: "<p><b>DeepTrace</b> is an innovative blockchain and machine learning-based platform designed to combat the <b>growing issue of deepfake videos</b> by leveraging advanced technology and <b>ensuring user privacy</b>. By utilizing the immutable and decentralized nature of blockchain, DeepTrace delivers a highly accurate and trustworthy solution for detecting and mitigating deepfake content worldwide.</p>",
@@ -54,7 +72,7 @@ const projectsData = [
         thumbnailImg: deeptrace,
     },
     {
-        ProjectId: 1,
+        ProjectId: 2,
         ProjectName: "AdroitUI",
         ProjectTagline: "TailwindCSS Components UI Library for React.",
         ProjectDescription: "<p><b>AdroitUI</b> is a comprehensive <b>Tailwind CSS component library</b> designed to help you define and implement <b>your own custom design system</b> seamlessly. With over 20+ finely crafted and editable components, Adroit UI eliminates the hassle of managing complex Tailwind CSS code, allowing you to focus on building stunning and consistent user interfaces.</p><br/><p>This project gained <b>3000+ downloads</b> in the first 3 months.</p>",
@@ -66,7 +84,7 @@ const projectsData = [
         thumbnailImg: adroitUIhome,
     },
     {
-        ProjectId: 2,
+        ProjectId: 3,
         ProjectName: "QuantaMind",
         ProjectTagline: "A Self-Help Mental Health Companion.",
         ProjectDescription: "<p>QuantaMind is a user-centric, technology-driven solution to provide personalized, stigma-free, and sustainable <b>mental health support</b> to individuals facing stressors and challenges in their daily lives, especially those in remote areas or with limited resources. This makes the work of doctors and psychiatrists easier by <b>aiding in more accurate and quicker patient analysis</b>.</p>",
@@ -78,7 +96,7 @@ const projectsData = [
         thumbnailImg: quantamind,
     },
     {
-        ProjectId: 3,
+        ProjectId: 4,
         ProjectName: "Edunate",
         ProjectTagline: "An EduFI Alumni Donation Platform.",
         ProjectDescription: "<p>Edunate is an EduFI platform designed to streamline the donation process for educational institutions. By leveraging blockchain technology and robust AI/ML techniques, Edunate ensures <b>transparency, traceability, and accountability</b> for every donation made. The platform empowers alumni to contribute to educational institutions in a secure and efficient manner, while <b>ensuring that their donations are utilized effectively</b>. All three, <b>students, alumni, and institutions</b> can interact seamlessly on the platform, creating a collaborative ecosystem that drives positive change in the education sector.</p>",
@@ -90,7 +108,7 @@ const projectsData = [
         thumbnailImg: EdunateLanding,
     },
     {
-        ProjectId: 4,
+        ProjectId: 5,
         ProjectName: "ECDSA Encryption",
         ProjectTagline: "Replicating secure ECDSA Node Transactions on Blockchain.",
         ProjectDescription: "<p>This project is an example of using a client and server to facilitate transfers between different addresses on a blockchain network. Although, Since there is just a single server on the back-end handling transfers, this is clearly very centralized. But, this project is focused on replicating the secure ecdsa public key cryptography for sending and verifying transactions.</p>",
@@ -102,7 +120,7 @@ const projectsData = [
         thumbnailImg: ecdsaSS,
     },
     {
-        ProjectId: 5,
+        ProjectId: 6,
         ProjectName: "EthXplore",
         ProjectTagline: "Ethereum Blockchain Block Explorer.",
         ProjectDescription: "<p>EthXplore is a Ethereum Block Explorer that gives you the ability to access and view the real-time data from the ethereum blockchain network. THe real-time data can include information about the blockchain network, blocks in the blockchain, transactions in a block, accounts and many other things!</p>",
@@ -114,7 +132,7 @@ const projectsData = [
         thumbnailImg: ethxplore,
     },
     {
-        ProjectId: 6,
+        ProjectId: 7,
         ProjectName: "National Archives of India - UI/UX Revamp",
         ProjectTagline: "UI/UX design revamp for the National Archives of India Website.",
         ProjectDescription: "<p>This UX/UI design rebranding for National Archives of India Website was done for a UX/UI design hackathon organised by National Archives of India and Abhilekh Patal portal. This case study includes the falws of the existing website and how they can be improved. More can be found out on the behance page of the same.</p>",
@@ -126,7 +144,7 @@ const projectsData = [
         thumbnailImg: naiLanding,
     },
     {
-        ProjectId: 7,
+        ProjectId: 8,
         ProjectName: "HealthBux - Brand Identity",
         ProjectTagline: "Brand Identity Design for HealthBux - A cloud kitchen service for Gym-freaks and Fitness-lovers!",
         ProjectDescription: "<p>This project involved creating a comprehensive brand identity for HealthBux, a cloud kitchen service tailored for gym enthusiasts and fitness lovers. The brand identity design encompassed logo creation, color schemes, typography, and marketing materials to ensure a cohesive and appealing visual presence. The goal was to reflect the energetic and health-focused nature of the service, making it attractive to its target audience.</p>",
