@@ -23,13 +23,13 @@ const experiences = [
     description: `<p className="mt-2">Led a team of six to design and implement a dynamic dashboard, streamlining data visualization and enhancing user interaction. Contributed to building a <b>responsive, scalable</b> platform using <b>React, RESTful APIs, Tailwind CSS</b>, and <b>MongoDB</b>, ensuring robust frontend and backend integration.</p>`,
     website: "https://skillop.in",
   },
-  {
-    title: "UI/UX Designer",
-    company: "BigWig Media",
-    duration: "Jan. 2024",
-    description: `<p className="mt-2">Revamped website flows, and added user friendly functionalities. Coordinated sessions to work through functionality, site architecture, and user flow requirements.</p>`,
-    website: "",
-  }
+  // {
+  //   title: "UI/UX Designer",
+  //   company: "BigWig Media",
+  //   duration: "Jan. 2024",
+  //   description: `<p className="mt-2">Revamped website flows, and added user friendly functionalities. Coordinated sessions to work through functionality, site architecture, and user flow requirements.</p>`,
+  //   website: "",
+  // }
 ];
 
 const ExperienceSection = () => {

@@ -51,7 +51,9 @@ const Projects = () => {
       {(path === '/') && <button className="flex gap-2 items-center text-textSecondary px-2 py-1 rounded-md transition-all duration-300 hover:bg-darkCard"
                 onClick={() => window.location.href = '/projects/'}>View All <ArrowUpRight className='h-4 w-4'/></button>}
       </div>
-      {projectsData.map((project, index) => (
+      {projectsData.map((project, index) => {
+        if(path === '/' && index >= 3) return;
+        return (
         <div 
           className="group relative col-span-3 flex flex-col justify-between overflow-hidden mt-6 rounded-xl transform-gpu bg-background [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] min-h-[250px] sm:min-h-[300px] md:min-h-[500px] custom" 
           key={index}
@@ -100,7 +102,13 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      ))}
+        )})}
+        {(path === '/') && <button className="relative group flex gap-2 items-center text-textSecondary w-full mx-auto py-4 mt-2 rounded-xl transition-all duration-300 hover:bg-darkCard items-center justify-center "
+                onClick={() => window.location.href = '/projects/'}>
+                  <div className='relative group flex gap-2 items-center text-textSecondary group-hover:text-textPrimary items-center justify-center '>Find them interesting? View All Projects<ArrowUpRight className='h-4 w-4'/>
+                  <span
+                            className="absolute inline-block h-[2px] left-0 bottom-0 w-0 bg-textPrimary transition-all duration-300 group-hover:w-full"
+                        ></span></div></button>}
     </div>
   );
 };
