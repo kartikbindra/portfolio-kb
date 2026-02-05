@@ -1,4 +1,4 @@
-import { Loader as LoaderIcon } from 'lucide-react';
+
 import loaderVid from '../assets/frame1_2.mp4';
 
 const Loader = () => {

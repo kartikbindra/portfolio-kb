@@ -1,4 +1,4 @@
-import { Mail, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import kbLogo from "../assets/kbLogo.png";
 import { Link } from "react-router-dom";
 

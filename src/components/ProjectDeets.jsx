@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { FaChevronLeft } from "react-icons/fa6";
-import { CgWebsite } from 'react-icons/cg';
+
 import { Github, Globe, Figma } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ const ProjectDeets = () => {
                 <FaChevronLeft /> Back to Projects
             </Link>
             {projectsData.map((project) => {
-                if (project.ProjectId == id) {
+                if (project.ProjectId === Number(id)) {
                     return (
                         <div key={project.ProjectId} className="flex flex-col justify-center">
                             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
@@ -81,6 +81,7 @@ const ProjectDeets = () => {
                         </div>
                     );
                 }
+                return null;
             })}
         </div>
     );
