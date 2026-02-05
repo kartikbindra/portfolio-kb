@@ -52,7 +52,7 @@ const Projects = () => {
                 onClick={() => window.location.href = '/projects/'}>View All <ArrowUpRight className='h-4 w-4'/></button>}
       </div>
       {projectsData.map((project, index) => {
-        if(path === '/' && index >= 3) return;
+        if(path === '/' && index >= 3) return null;
         return (
         <div 
           className="group relative col-span-3 flex flex-col justify-between overflow-hidden mt-6 rounded-xl transform-gpu bg-background [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] min-h-[250px] sm:min-h-[300px] md:min-h-[500px] custom" 

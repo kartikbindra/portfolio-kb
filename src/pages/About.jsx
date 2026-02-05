@@ -1,6 +1,6 @@
 import React from 'react';
 import SkillSet from '../components/SkillProgress';
-import { MapPinHouse, Linkedin, Github, Mail } from "lucide-react";
+import { Linkedin, Github, Mail } from "lucide-react";
 import { RiTwitterXLine } from "react-icons/ri";
 import { AiOutlineDiscord } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";

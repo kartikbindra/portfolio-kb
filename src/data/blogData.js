@@ -10,7 +10,7 @@ const blogData = [
     image: LeetCodeArchitecture,
   },
   {
-    id: 1,
+    id: 2,
     title: "What if I told you your 'next-gen AI Stack' is as old as Google?",
     description: "Exposing RAG Context Engineering as the DOPPLEGANGER of Semantic Web propose by Sir Tim Berners-Lee.",
     link: "https://open.substack.com/pub/kartikbindra/p/what-if-i-told-you-your-next-gen?r=3pux17&utm_campaign=post&utm_medium=web",

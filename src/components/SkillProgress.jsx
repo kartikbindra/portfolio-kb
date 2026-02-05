@@ -24,22 +24,7 @@ const skills = [
   { name: "Web Sockets", level: 75 },
 ];
 
-const ProgressBar = ({ skill, level }) => {
-  return (
-    <div className="mb-4">
-      <div className="flex justify-between items-center">
-        <span className="text-md font-semibold">{skill}</span>
-        <span>{level}%</span>
-      </div>
-      <div className="bg-textSecondary/50 h-2 rounded-full mt-2">
-        <div
-          className="bg-textPrimary h-2 rounded-full"
-          style={{ width: `${level}%` }}
-        ></div>
-      </div>
-    </div>
-  );
-};
+
 
 // const SkillSet = () => {
 //   return (

@@ -10,7 +10,7 @@ import deeptraceUpload from "../assets/deeptrace-upload.png";
 import deeptraceWorkflow from "../assets/workflow_diagram_New.png";
 import quantaGames from "../assets/games dashboarddark.png";
 import quantaMeditate from "../assets/meditation session.png";
-import simonSays from "../assets/simon says.png";
+
 import wordle from "../assets/wordle.png";
 import questionnaire from "../assets/questionnaire.png";
 import journal from "../assets/your journaldark.png";
