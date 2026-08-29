@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 
 const experiences = [
   {
+    title: "SDE Intern",
+    company: "Intuit",
+    duration: "Jun. 2026 - Jul. 2026",
+    description: `<p className="mt-2">Researched dynamic context retrieval strategies for the Mid-Market Knowledge Context Layer powering
+OMNI Agent integrated in Quickbooks platform used by 1M+ users worldwide. Developed an ingestion and retrieval piepeline that enriched AI agent responses with user profile, preference,
+and business data, improving conversation quality by 20%.</p>`,
+    website: "https://www.intuit.com",
+  },
+  {
     title: "Blockchain Research Intern",
     company: "Delhi Technological University (Under Prof. Rahul Thakur)",
     duration: "Oct. 2024 - Dec. 2024",
@@ -16,13 +25,13 @@ const experiences = [
     description: `<p className="mt-2">Created a comprehensive web and mobile application <a href="https://www.delhicop.in" target="_blank"><b>DelhiCOP</b></a> to enable efficient tracking and report daily crimes, <b>enhancing operational efficiency</b>. Architected and implemented a modular backend using <b>Node.js</b>, <b>Express</b>, and <b>MongoDB</b>, and built a full-stack interface with <b>React</b>, improving <b>scalability</b> and <b>maintainability</b>.</p>`,
     website: "https://www.delhicop.in",
   },
-  {
-    title: "Full-Stack Web Developer",
-    company: "Skillop",
-    duration: "Dec. 2023 - Jul. 2024",
-    description: `<p className="mt-2">Led a team of six to design and implement a dynamic dashboard, streamlining data visualization and enhancing user interaction. Contributed to building a <b>responsive, scalable</b> platform using <b>React, RESTful APIs, Tailwind CSS</b>, and <b>MongoDB</b>, ensuring robust frontend and backend integration.</p>`,
-    website: "https://skillop.in",
-  },
+  // {
+  //   title: "Full-Stack Web Developer",
+  //   company: "Skillop",
+  //   duration: "Dec. 2023 - Jul. 2024",
+  //   description: `<p className="mt-2">Led a team of six to design and implement a dynamic dashboard, streamlining data visualization and enhancing user interaction. Contributed to building a <b>responsive, scalable</b> platform using <b>React, RESTful APIs, Tailwind CSS</b>, and <b>MongoDB</b>, ensuring robust frontend and backend integration.</p>`,
+  //   website: "https://skillop.in",
+  // },
   // {
   //   title: "UI/UX Designer",
   //   company: "BigWig Media",
